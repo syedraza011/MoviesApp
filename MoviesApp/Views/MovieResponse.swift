@@ -13,8 +13,7 @@ struct MovieResponse: Decodable{
     }
     static let mock = MovieResponse (Search: [Movie.mock])
 }
-//    Identifiable
-//    let id = UUID()
+
 struct Movie: Decodable, Identifiable {
     let id: String
     let title: String
@@ -29,5 +28,5 @@ struct Movie: Decodable, Identifiable {
         case poster = "Poster"
         case year = "Year"
     }
-    static let mock = Movie(id: "", title: "Title", type: "Movie", poster: "https://www.omdbapi.com/?i=tt3896198&apikey=410a0193", year: "1979")
+    static let mock = Movie(id: "tt0120338", title: "Titanic", type:"Movie", poster:"https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg", year:"1979")
 }
