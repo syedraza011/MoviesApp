@@ -23,7 +23,9 @@ struct ContentView: View {
             .navigationTitle("Movies")
 //            .searchable(text: $searchText)
             .onAppear {
+//                listView()
                 viewModel.getMovies(searchText)
+                
             }
 //            .onChange(of: searchText) {
 //
@@ -59,23 +61,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-//import SwiftUI
-//
-//struct ContentView: View {
-//    var body: some View {
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
